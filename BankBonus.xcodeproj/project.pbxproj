@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667AE8A39AC39C82A5FD63DB /* Pods_BankBonus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECED1E884E487DDFDB9AB3B3 /* Pods_BankBonus.framework */; };
+		7F2149EC251B74EC007A5087 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2149EB251B74EC007A5087 /* Constants.swift */; };
+		7F31A4C22519E81700075843 /* StateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31A4C12519E81700075843 /* StateViewModel.swift */; };
+		7F31A4C42519EB3100075843 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31A4C32519EB3100075843 /* Box.swift */; };
+		7F31A4C6251A216B00075843 /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31A4C5251A216B00075843 /* BankModel.swift */; };
+		7F31A4C9251A249300075843 /* BankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31A4C8251A249300075843 /* BankService.swift */; };
+		7F31A4CC251A37DA00075843 /* BankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31A4CB251A37DA00075843 /* BankViewModel.swift */; };
+		7F32E1A92518D9F1008EAA43 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F32E1A82518D9F1008EAA43 /* StateModel.swift */; };
+		7F32E1AB2518DC7B008EAA43 /* StateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F32E1AA2518DC7B008EAA43 /* StateService.swift */; };
+		7F6DAD83251CD5CC002DFE54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F6DAD82251CD5CB002DFE54 /* GoogleService-Info.plist */; };
+		7F7CD9AC251785CE00D12238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CD9AB251785CE00D12238 /* AppDelegate.swift */; };
+		7F7CD9AE251785CE00D12238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CD9AD251785CE00D12238 /* SceneDelegate.swift */; };
+		7F7CD9B0251785CE00D12238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CD9AF251785CE00D12238 /* ViewController.swift */; };
+		7F7CD9B3251785CE00D12238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7CD9B1251785CE00D12238 /* Main.storyboard */; };
+		7F7CD9B5251785D000D12238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7CD9B4251785D000D12238 /* Assets.xcassets */; };
+		7F7CD9B8251785D000D12238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7CD9B6251785D000D12238 /* LaunchScreen.storyboard */; };
+		7F7CD9C3251785D000D12238 /* BankBonusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CD9C2251785D000D12238 /* BankBonusTests.swift */; };
+		7F7CD9CF25178E5000D12238 /* BankDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CD9CD25178E5000D12238 /* BankDetailCell.swift */; };
+		7F7CD9D025178E5000D12238 /* BankDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7CD9CE25178E5000D12238 /* BankDetailCell.xib */; };
+		AA6F2895B5838A066D3B96C0 /* Pods_BankBonusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4B80CB1E2DCE82B77B2B02 /* Pods_BankBonusTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F7CD9BF251785D000D12238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F7CD9A0251785CE00D12238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F7CD9A7251785CE00D12238;
+			remoteInfo = BankBonus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F4B80CB1E2DCE82B77B2B02 /* Pods_BankBonusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankBonusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		162F7349BF2BBF074BB3F07E /* Pods-BankBonus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankBonus.debug.xcconfig"; path = "Target Support Files/Pods-BankBonus/Pods-BankBonus.debug.xcconfig"; sourceTree = "<group>"; };
+		32C4C948E50BD5EEDB4F76A1 /* Pods-BankBonusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankBonusTests.release.xcconfig"; path = "Target Support Files/Pods-BankBonusTests/Pods-BankBonusTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F2149EB251B74EC007A5087 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7F31A4C12519E81700075843 /* StateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewModel.swift; sourceTree = "<group>"; };
+		7F31A4C32519EB3100075843 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		7F31A4C5251A216B00075843 /* BankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
+		7F31A4C8251A249300075843 /* BankService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankService.swift; sourceTree = "<group>"; };
+		7F31A4CB251A37DA00075843 /* BankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewModel.swift; sourceTree = "<group>"; };
+		7F32E1A82518D9F1008EAA43 /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
+		7F32E1AA2518DC7B008EAA43 /* StateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateService.swift; sourceTree = "<group>"; };
+		7F6DAD82251CD5CB002DFE54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F7CD9A8251785CE00D12238 /* BankBonus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankBonus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7CD9AB251785CE00D12238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F7CD9AD251785CE00D12238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F7CD9AF251785CE00D12238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F7CD9B2251785CE00D12238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F7CD9B4251785D000D12238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F7CD9B7251785D000D12238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F7CD9B9251785D000D12238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7CD9BE251785D000D12238 /* BankBonusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankBonusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7CD9C2251785D000D12238 /* BankBonusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankBonusTests.swift; sourceTree = "<group>"; };
+		7F7CD9C4251785D000D12238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7CD9CD25178E5000D12238 /* BankDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailCell.swift; sourceTree = "<group>"; };
+		7F7CD9CE25178E5000D12238 /* BankDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankDetailCell.xib; sourceTree = "<group>"; };
+		D788536AE112ECDC9FF1B26C /* Pods-BankBonus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankBonus.release.xcconfig"; path = "Target Support Files/Pods-BankBonus/Pods-BankBonus.release.xcconfig"; sourceTree = "<group>"; };
+		ECED1E884E487DDFDB9AB3B3 /* Pods_BankBonus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankBonus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0922B9E415F4D7EA6D070D7 /* Pods-BankBonusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankBonusTests.debug.xcconfig"; path = "Target Support Files/Pods-BankBonusTests/Pods-BankBonusTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F7CD9A5251785CE00D12238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667AE8A39AC39C82A5FD63DB /* Pods_BankBonus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F7CD9BB251785D000D12238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6F2895B5838A066D3B96C0 /* Pods_BankBonusTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DBFA1C065F8F238A35AED28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECED1E884E487DDFDB9AB3B3 /* Pods_BankBonus.framework */,
+				0F4B80CB1E2DCE82B77B2B02 /* Pods_BankBonusTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F31A4C7251A247A00075843 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7F32E1AA2518DC7B008EAA43 /* StateService.swift */,
+				7F31A4C32519EB3100075843 /* Box.swift */,
+				7F31A4C8251A249300075843 /* BankService.swift */,
+				7F2149EB251B74EC007A5087 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7F31A4CA251A376E00075843 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F32E1A82518D9F1008EAA43 /* StateModel.swift */,
+				7F31A4C5251A216B00075843 /* BankModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F3B4662DEC70B40B4CB9EBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				162F7349BF2BBF074BB3F07E /* Pods-BankBonus.debug.xcconfig */,
+				D788536AE112ECDC9FF1B26C /* Pods-BankBonus.release.xcconfig */,
+				F0922B9E415F4D7EA6D070D7 /* Pods-BankBonusTests.debug.xcconfig */,
+				32C4C948E50BD5EEDB4F76A1 /* Pods-BankBonusTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F7CD99F251785CE00D12238 = {
+			isa = PBXGroup;
+			children = (
+				7F7CD9AA251785CE00D12238 /* BankBonus */,
+				7F7CD9C1251785D000D12238 /* BankBonusTests */,
+				7F7CD9A9251785CE00D12238 /* Products */,
+				7F3B4662DEC70B40B4CB9EBD /* Pods */,
+				3DBFA1C065F8F238A35AED28 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F7CD9A9251785CE00D12238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F7CD9A8251785CE00D12238 /* BankBonus.app */,
+				7F7CD9BE251785D000D12238 /* BankBonusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F7CD9AA251785CE00D12238 /* BankBonus */ = {
+			isa = PBXGroup;
+			children = (
+				7F7CD9AB251785CE00D12238 /* AppDelegate.swift */,
+				7F7CD9AD251785CE00D12238 /* SceneDelegate.swift */,
+				7F7CD9CD25178E5000D12238 /* BankDetailCell.swift */,
+				7F7CD9CE25178E5000D12238 /* BankDetailCell.xib */,
+				7F7CD9AF251785CE00D12238 /* ViewController.swift */,
+				7F6DAD82251CD5CB002DFE54 /* GoogleService-Info.plist */,
+				7F7CD9B1251785CE00D12238 /* Main.storyboard */,
+				7F7CD9B4251785D000D12238 /* Assets.xcassets */,
+				7F7CD9B6251785D000D12238 /* LaunchScreen.storyboard */,
+				7F7CD9B9251785D000D12238 /* Info.plist */,
+				7F31A4CA251A376E00075843 /* Models */,
+				7F31A4C7251A247A00075843 /* Utilities */,
+				7F94D4D4251B719500015FE6 /* ViewModels */,
+			);
+			path = BankBonus;
+			sourceTree = "<group>";
+		};
+		7F7CD9C1251785D000D12238 /* BankBonusTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F7CD9C2251785D000D12238 /* BankBonusTests.swift */,
+				7F7CD9C4251785D000D12238 /* Info.plist */,
+			);
+			path = BankBonusTests;
+			sourceTree = "<group>";
+		};
+		7F94D4D4251B719500015FE6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7F31A4C12519E81700075843 /* StateViewModel.swift */,
+				7F31A4CB251A37DA00075843 /* BankViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F7CD9A7251785CE00D12238 /* BankBonus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F7CD9C7251785D000D12238 /* Build configuration list for PBXNativeTarget "BankBonus" */;
+			buildPhases = (
+				DB1A79A94FC7E338012E415A /* [CP] Check Pods Manifest.lock */,
+				7F7CD9A4251785CE00D12238 /* Sources */,
+				7F7CD9A5251785CE00D12238 /* Frameworks */,
+				7F7CD9A6251785CE00D12238 /* Resources */,
+				A3CF75FB40ED3BCA1CB97B7B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankBonus;
+			productName = BankBonus;
+			productReference = 7F7CD9A8251785CE00D12238 /* BankBonus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F7CD9BD251785D000D12238 /* BankBonusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F7CD9CA251785D000D12238 /* Build configuration list for PBXNativeTarget "BankBonusTests" */;
+			buildPhases = (
+				E8B898538B7BAC758603DA59 /* [CP] Check Pods Manifest.lock */,
+				7F7CD9BA251785D000D12238 /* Sources */,
+				7F7CD9BB251785D000D12238 /* Frameworks */,
+				7F7CD9BC251785D000D12238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F7CD9C0251785D000D12238 /* PBXTargetDependency */,
+			);
+			name = BankBonusTests;
+			productName = BankBonusTests;
+			productReference = 7F7CD9BE251785D000D12238 /* BankBonusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F7CD9A0251785CE00D12238 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Prabh;
+				TargetAttributes = {
+					7F7CD9A7251785CE00D12238 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					7F7CD9BD251785D000D12238 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7F7CD9A7251785CE00D12238;
+					};
+				};
+			};
+			buildConfigurationList = 7F7CD9A3251785CE00D12238 /* Build configuration list for PBXProject "BankBonus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F7CD99F251785CE00D12238;
+			productRefGroup = 7F7CD9A9251785CE00D12238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F7CD9A7251785CE00D12238 /* BankBonus */,
+				7F7CD9BD251785D000D12238 /* BankBonusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F7CD9A6251785CE00D12238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7CD9B8251785D000D12238 /* LaunchScreen.storyboard in Resources */,
+				7F7CD9B5251785D000D12238 /* Assets.xcassets in Resources */,
+				7F6DAD83251CD5CC002DFE54 /* GoogleService-Info.plist in Resources */,
+				7F7CD9D025178E5000D12238 /* BankDetailCell.xib in Resources */,
+				7F7CD9B3251785CE00D12238 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F7CD9BC251785D000D12238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3CF75FB40ED3BCA1CB97B7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankBonus/Pods-BankBonus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankBonus/Pods-BankBonus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankBonus/Pods-BankBonus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1A79A94FC7E338012E415A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankBonus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8B898538B7BAC758603DA59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankBonusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F7CD9A4251785CE00D12238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7CD9B0251785CE00D12238 /* ViewController.swift in Sources */,
+				7F7CD9AC251785CE00D12238 /* AppDelegate.swift in Sources */,
+				7F7CD9CF25178E5000D12238 /* BankDetailCell.swift in Sources */,
+				7F7CD9AE251785CE00D12238 /* SceneDelegate.swift in Sources */,
+				7F32E1A92518D9F1008EAA43 /* StateModel.swift in Sources */,
+				7F31A4C42519EB3100075843 /* Box.swift in Sources */,
+				7F31A4CC251A37DA00075843 /* BankViewModel.swift in Sources */,
+				7F32E1AB2518DC7B008EAA43 /* StateService.swift in Sources */,
+				7F31A4C6251A216B00075843 /* BankModel.swift in Sources */,
+				7F31A4C22519E81700075843 /* StateViewModel.swift in Sources */,
+				7F31A4C9251A249300075843 /* BankService.swift in Sources */,
+				7F2149EC251B74EC007A5087 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F7CD9BA251785D000D12238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7CD9C3251785D000D12238 /* BankBonusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F7CD9C0251785D000D12238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F7CD9A7251785CE00D12238 /* BankBonus */;
+			targetProxy = 7F7CD9BF251785D000D12238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F7CD9B1251785CE00D12238 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F7CD9B2251785CE00D12238 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F7CD9B6251785D000D12238 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F7CD9B7251785D000D12238 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F7CD9C5251785D000D12238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F7CD9C6251785D000D12238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F7CD9C8251785D000D12238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162F7349BF2BBF074BB3F07E /* Pods-BankBonus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = BankBonus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.BankBonus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F7CD9C9251785D000D12238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D788536AE112ECDC9FF1B26C /* Pods-BankBonus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = BankBonus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.BankBonus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F7CD9CB251785D000D12238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0922B9E415F4D7EA6D070D7 /* Pods-BankBonusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = BankBonusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.BankBonusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankBonus.app/BankBonus";
+			};
+			name = Debug;
+		};
+		7F7CD9CC251785D000D12238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C4C948E50BD5EEDB4F76A1 /* Pods-BankBonusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4P2SA89UW;
+				INFOPLIST_FILE = BankBonusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prabh.BankBonusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankBonus.app/BankBonus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F7CD9A3251785CE00D12238 /* Build configuration list for PBXProject "BankBonus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7CD9C5251785D000D12238 /* Debug */,
+				7F7CD9C6251785D000D12238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F7CD9C7251785D000D12238 /* Build configuration list for PBXNativeTarget "BankBonus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7CD9C8251785D000D12238 /* Debug */,
+				7F7CD9C9251785D000D12238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F7CD9CA251785D000D12238 /* Build configuration list for PBXNativeTarget "BankBonusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7CD9CB251785D000D12238 /* Debug */,
+				7F7CD9CC251785D000D12238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F7CD9A0251785CE00D12238 /* Project object */;
+}
