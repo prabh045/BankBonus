@@ -12,7 +12,7 @@ import os.log
 class StateService {
     
     static func fetchStates(completion: @escaping ([StateModel]?, Error?) -> Void) {
-        let urlString = "http://localhost:5001/bankbonus-34ec2/us-central1/retrievStates"
+        let urlString = "https://us-central1-bank-bonus.cloudfunctions.net/retrievStates"
         let url = URL(string: urlString)!
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in

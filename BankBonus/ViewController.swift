@@ -11,12 +11,14 @@ import iOSDropDown
 
 class ViewController: UIViewController {
     
+    //MARK: Properties
     @IBOutlet weak var locationTextField: DropDown!
     @IBOutlet weak var bankDetailsTableView: UITableView!
     
     var stateViewModel = StateViewModel()
     var bankViewModel = BankViewModel()
     
+    //MARK: View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setuUpTableView()
@@ -75,21 +77,26 @@ class ViewController: UIViewController {
 
 }
 
+//MARK: TableView Extension
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
-//
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 188
-//    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.bankViewModel.banks.value.count
+        return self.bankViewModel.banks.value.count == 0 ? 1 : self.bankViewModel.banks.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //Just a Simple UI to display when no bank is available
+        if self.bankViewModel.banks.value.count == 0 {
+            let emptyCell = UITableViewCell()
+            emptyCell.textLabel?.text = "No Results Available"
+            return emptyCell
+        }
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "bankCell", for: indexPath) as? BankDetailCell else {
             fatalError("Could not find cell")
         }
+        
         cell.bankViewModel = self.bankViewModel
         cell.configureCell(forIndex: indexPath.row)
         cell.closure = { [weak self] (vc) in

@@ -12,7 +12,7 @@ import os.log
 class BankService {
     
     static func fetchBanks(ids: [String],completion: @escaping ([BankModel]?, Error?) -> Void) {
-        let urlString = "http://localhost:5001/bankbonus-34ec2/us-central1/retrieveBanks"
+        let urlString = "https://us-central1-bank-bonus.cloudfunctions.net/retrieveBanks"
         let url = URL(string: urlString)!
         
         var json = [String:Any]()
